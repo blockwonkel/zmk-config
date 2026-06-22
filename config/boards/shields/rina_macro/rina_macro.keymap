@@ -23,5 +23,5 @@
             &bootloader     &none            &none            &none            &none            &bt BT_CLR
 
         };
-    }
+    };
 }
