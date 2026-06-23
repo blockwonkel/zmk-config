@@ -25,15 +25,15 @@
             >;
         };
 
-        extra1 {
+        extra_layer_1 {
             status = "reserved";
         };
 
-        extra2 {
+        extra_layer_2 {
             status = "reserved";
         };
 
-        extra3 {
+        extra_layer_3 {
             status = "reserved";
         };
     };
