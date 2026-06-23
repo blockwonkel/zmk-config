@@ -1,9 +1,0 @@
-if SHIELD_RINA_MACRO
-
-config ZMK_KEYBOARD_NAME
-    default "rina_macro"
-
-endif
-
-
-CONFIG_ZMK_KEYBOARD_NAME="Rina Macro"
