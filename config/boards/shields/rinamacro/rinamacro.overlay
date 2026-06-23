@@ -60,7 +60,7 @@
         display-name = "Default Layout";
         transform = <&default_transform>;
         kscan = <&default_kscan>;
-        
+
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0> // Left Encoder
 
@@ -93,8 +93,5 @@
             ;
     };
 
-    chosen {
-        zmk,kscan = &default_kscan;
-        zmk,matrix_transform = &default_transform;
-    };
+
 };
