@@ -1,6 +1,17 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <behaviors/unicode.dtsi>
+#include <zmk-unicode/keys-full.h>
+
+
+// Optional: Overwrite default behavior properties
+&uc {
+    default-mode = <UC_MODE_WIN_COMPOSE>;
+    minimum-length = <0>;
+    win-compose-key = <RALT>;
+
+};
 
 /{
     keymap {
@@ -11,7 +22,7 @@
             &kp LS(F19)     &kp LS(F1)       &kp LS(F2)       &kp LS(F3)       &kp LS(F4)       &kp LS(F22)
             &kp LS(F23)     &kp LS(F5)       &kp LS(F6)       &kp LS(F7)       &kp LS(F8)       &kp LS(F24)
                             &kp LS(F9)       &kp LS(F10)      &kp LS(F11)      &kp LS(F12)      
-                            &mo 1            &kp LS(F14)      &kp LS(F15)      &kp LS(F16)      
+                            &mo 1            &kp LS(F14)      &kp LS(F15)      &uc UC_PLEADING_FACE      
             >;
             sensor-bindings = <&inc_dec_kp LS(F17) LS(F18) &inc_dec_kp LS(F20) LS(F21)>;
         };
